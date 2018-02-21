@@ -9,8 +9,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-apt.get("/article-one", function(req, res){
-   res.send("This is the request one"); 
+app.get("/article-one", function(req, res){
+   res.send("This is the request on"); 
 });
 
 app.get('/ui/style.css', function (req, res) {
