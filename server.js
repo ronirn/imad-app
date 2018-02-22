@@ -16,42 +16,46 @@ In addition to writing short stories and poems, Poe also worked as a literary cr
 Poe's short story, 'The Black Cat' was published in 1843 in The Saturday Evening Post. It was popular with readers, but Poe did not receive instant success until he published his famous poem, 'The Raven'. Since its publication, elements of 'The Black Cat' have inspired films, television episodes, paintings, plays, comics, and novels.`
 };
 
-//${} this line is used for use the variable content
-var htmlTemplate = `
-	<html>
-	<head>
-		<title>
-			${title}
-		</title>
-		<meta name="viewport" content="width-device-width, initial-scale=1">
-		<link href="/ui/style.css" rel="stylesheet" />
-	</head>
-	<body>
-		<div id="d1"> 
-			<font>  Welcome to this website </font>
-			<img src="https://static.pexels.com/photos/879788/pexels-photo-879788.jpeg" height="100%" width="40%" style="padding-left: 55%;">		
-		</div>
-		<div id="d2">
-			<ul>
-				<li>
-					Home
-				</li>	
-				<li>
-					Gallery 
-				</li>	
-				<li>
-					Contact Us
-				</li>	
-			</ul>
-		</div>
-		<div id="d3">
-			<div id="d4">
-				${content} 
-		</div>		
-		</div>
-	</body>
-</html>
-`;
+function createTemplate (data){
+    var title = data.title;
+    var content = data.content;
+    //${} this line is used for use the variable content
+    var htmlTemplate = `
+    	<html>
+    	<head>
+    		<title>
+    			${title}
+    		</title>
+    		<meta name="viewport" content="width-device-width, initial-scale=1">
+    		<link href="/ui/style.css" rel="stylesheet" />
+    	</head>
+    	<body>
+    		<div id="d1"> 
+    			<font>  Welcome to this website </font>
+    			<img src="https://static.pexels.com/photos/879788/pexels-photo-879788.jpeg" height="100%" width="40%" style="padding-left: 55%;">		
+    		</div>
+    		<div id="d2">
+    			<ul>
+    				<li>
+    					Home
+    				</li>	
+    				<li>
+    					Gallery 
+    				</li>	
+    				<li>
+    					Contact Us
+    				</li>	
+    			</ul>
+    		</div>
+    		<div id="d3">
+    			<div id="d4">
+    				${content} 
+    		</div>		
+    		</div>
+    	</body>
+    </html>
+    `;
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
