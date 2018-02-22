@@ -19,4 +19,47 @@ body {
 .img-medium {
     height: 200px;
 }
+body{
+	background-color: #ffffe6;
 
+}
+#d1{
+	position: absolute;
+	left: 10px;
+	height: 20%;
+	width: 800px;
+	overflow: hidden;
+	background-color: red;
+	border: 2px solid;
+}
+font{
+	color:  #66ff66;
+	font-weight: bold;
+	font-size: 20px;
+}
+#d2{
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	height: 20%;
+	width: 300px;
+	overflow: hidden;
+	background-color: #9999ff;
+	border: 1px green solid;
+	border-radius: 25px;
+	cursor: pointer;
+}
+#d3{
+	position: absolute;
+	top: 50%;
+	height: 20%;
+	width: 50%;
+	background-color: #ffa64d;
+	overflow: scroll;
+	border: 2px solid;
+	border-radius: 30px;
+}
+#d4{
+	position: absolute;
+	left: 20px;
+}
