@@ -10,7 +10,7 @@ var moveleft =0;
 
 function moveRight(){
     moveleft = moveleft + 1;
-    mad.style.moveleft = moveleft + 'px';
+    mad.style.marginLeft = moveleft + 'px';
 }
 
 mad.onclick = function(){
