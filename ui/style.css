@@ -51,6 +51,7 @@ font{
 }
 #d3{
 	position: absolute;
+	left: 20%;
 	top: 50%;
 	height: 20%;
 	width: 50%;
