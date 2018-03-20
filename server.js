@@ -13,22 +13,7 @@ var app = express();
 app.use(morgan('combined'));
 
 //this line was modified by me
-var articles = {
-    'article-one' : {
-	title: "Article | one",
-	heading : " Hi",
-	content: `The Black Cat' is a short story written by Edgar Allan Poe. Poe was born in 1809, died at the age of 40 in 1849, and was an important contributor to the American Romantic movement. His work has also been described as mystery, macabre, and Gothic.
 
-In addition to writing short stories and poems, Poe also worked as a literary critic. He was married to his cousin for 12 years, until she died of tuberculosis in 1847. Throughout his life, Poe struggled with money. He couldn't afford to go to college, and he gambled and drank excessively.
-
-Poe's short story, 'The Black Cat' was published in 1843 in The Saturday Evening Post. It was popular with readers, but Poe did not receive instant success until he published his famous poem, 'The Raven'. Since its publication, elements of 'The Black Cat' have inspired films, television episodes, paintings, plays, comics, and novels.`
-},
-    'article-two' : {
-        title: "Article | two",
-    	heading : " Hi",
-	    content: `After the death of his father, T'Challa returns home to the African nation of Wakanda to take his rightful place as king. When a powerful enemy suddenly reappears, T'Challa's mettle as king -- and as Black Panther -- gets tested when he's drawn into a conflict that puts the fate of Wakanda and the entire world at risk. Faced with treachery and danger, the young king must rally his allies and release the full power of Black Panther to defeat his foes and secure the safety of his people.`
-    },
-};
 
 
 function createTemplate (data){
